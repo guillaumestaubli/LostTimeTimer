@@ -42,6 +42,9 @@ namespace LostTimeTimer
 
         private void BtnStart_Click(object sender, EventArgs e)
         {
+            if (Running)
+                return;
+
             Clock.Start();
             Running = true;
 
